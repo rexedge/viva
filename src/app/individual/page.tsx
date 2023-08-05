@@ -1,4 +1,4 @@
-import Cards from '@/emma/page';
+import Cards from '@/components/individual/page';
 import React from 'react';
 
 const Individual = () => {

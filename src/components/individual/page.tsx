@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cards = ({image, num, text}) => {
+const Cards = ({image, num, text}:CardP) => {
   return (
     <div className=' bg-gray-900 text-center font-bold text-x1'>
        <div>
