@@ -9,19 +9,19 @@ import Image from 'next/image';
 const Navbar = () => {
 	const pathName = usePathname();
 	return (
-		<Section className='flex justify-between px-5 py-2 relative'>
-				<Link
+		<Section className='flex justify-between px-16 py-2 relative'>
+			<Link
 				href='/'
 				className='text-white flex items-center'
-				>
-					<Image
-						className=''
-						alt=''
-						height={50}
-						width={100}
-						src={'/image/logowhite.svg'}
-					/>
-				</Link>
+			>
+				<Image
+					className=''
+					alt=''
+					height={50}
+					width={100}
+					src={'/image/logowhite.svg'}
+				/>
+			</Link>
 			<ul className='flex items-center gap-5'>
 				<li>
 					<Button
