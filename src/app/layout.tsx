@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Footer from '../components/layout/footer';
-import Navbar from '@/components/layout/navbar';
+import Header from '@/components/layout/header';
 
 export const metadata: Metadata = {
 	title: 'Viva',
@@ -16,7 +16,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={'bg-black'}>
-				<Navbar />
+				<Header />
 				{children}
 				<Footer />
 			</body>

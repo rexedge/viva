@@ -9,7 +9,7 @@ import Image from 'next/image';
 const Navbar = () => {
 	const pathName = usePathname();
 	return (
-		<Section className='flex justify-between px-5 py-2'>
+		<Section className='flex justify-between px-16 py-2 relative'>
 			<Link
 				href='/'
 				className='text-white flex items-center'
