@@ -3,13 +3,13 @@ import React from 'react';
 export default function Section({
 	children,
 	color,
-}: {
-	children: React.ReactNode;
-	color?: string;
-}) {
+	height,
+	width = 'max-w-[1440px]',
+	className,
+}: SectionP) {
 	return (
 		<div className={`${color}`}>
-			<div className='max-w-[1440px] mx-auto min-h-screen'>
+			<div className={`${width} mx-auto ${height} ${className}`}>
 				{children}
 			</div>
 		</div>
