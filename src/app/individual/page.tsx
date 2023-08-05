@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Individual = () => {
-	return <div>Individual</div>;
+	return <div className='bg-[]'>Individual</div>;
 };
 
 export default Individual;
