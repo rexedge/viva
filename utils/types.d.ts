@@ -17,4 +17,7 @@ interface ButtonP {
 	type?: 'primary' | 'secondary';
 	active?: boolean;
 	href: string;
+	className?: string;
 }
+
+

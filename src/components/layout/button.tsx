@@ -1,12 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
 
-const Button = ({ text, active, type = 'primary', href }: ButtonP) => {
-	if (type === 'primary') {
+const Button = ({
+	text,
+	active,
+	type = 'primary',
+	href,
+	className,
+	
+}: ButtonP) => { 
+	if (type === 'primary' ) {
 		return (
 			<Link
 				href={href}
-				className={`${
+				className={`${className} ${
 					active &&
 					'bg-gradient-to-r from-slate-300 to-slate-500'
 				} hover:bg-gradient-to-r hover:from-slate-300 hover:to-slate-500 cursor-pointer px-4 py-2 rounded-full text-white transition duration-300 ease-in-out relative overflow-hidden text-lg font-medium`}
