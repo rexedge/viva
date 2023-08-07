@@ -1,4 +1,4 @@
-//NOTE WHEN YOU USE A REMOTE IMAGE (i.e. IMAGES FROM LINKS), YOU NEED TO CONFIGURE YOUR next.config.js FILE
+// N.B. WHEN YOU USE A REMOTE IMAGE (i.e. IMAGES FROM LINKS), YOU NEED TO CONFIGURE YOUR next.config.js FILE
 // Include this in the next config file
 // images: {
 // 	remotePatterns: [
@@ -12,6 +12,8 @@
 // },
 
 // I WILL EXPLAIN THIS IN THE NEXT CLASS
+
+// Also please note that the best way is to have these images in your public folder. So downloading dem will be a much better option
 
 export const REMOTE_IMAGES = [
 	{
