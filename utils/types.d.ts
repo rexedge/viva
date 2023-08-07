@@ -10,6 +10,7 @@ interface SectionP {
 	height?: string;
 	width?: string;
 	className?: string;
+	
 }
 
 interface ButtonP {

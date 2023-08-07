@@ -9,6 +9,7 @@ const Button = ({
 	className,
 	
 }: ButtonP) => { 
+	
 	if (type === 'primary' ) {
 		return (
 			<Link
