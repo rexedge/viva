@@ -1,49 +1,68 @@
-import Section from '@/components/layout/section';
-import React from 'react';
-
-// CHECK OUT MY const-remote.ts FILE IN UTILS
-import { REMOTE_IMAGES } from '../../../utils/images-remote';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import { CLICK_BUTTONS } from "../../../utils/dc";
+import ClickBtn from "@/components/individual/clickbtn";
+import Benefits from "@/components/business/benefits";
 
 const Business = () => {
-	return (
-		<div>
-			<Section
-				height='min-h-[400px]'
-				color='bg-[rgb(14_18_26)]'
-				className='p-10'
-			>
-				<div className='grid grid-cols-1 md:grid-cols-2'>
-					<div className='text-5xl font-bold text-white p-10 flex flex-col justify-between'>
-						Whether you're a business owner or an individual,
-						our Tap to Pay app makes payments easy and
-						accessible for all.
-						<div className='text-sm font-normal mt-10'>
-							{`*Available where applicable.`}
-						</div>
-					</div>
-					<div className='text-white flex flex-wrap justify-center items-center max-w-2xl mx-auto px-20 py-5 border border-purple-700 rounded-3xl gap-4'>
-						{/* MAPPING THROUGH THE IMAGES HERE. */}
-						{REMOTE_IMAGES.map((image, id) => (
-							<div
-								key={id}
-								className='h-14 w-20 rounded-full bg-slate-800 shrink-0 grow-0 flex items-center justify-center'
-							>
-								<Image
-									src={image.src}
-									width={500}
-									height={500}
-									alt={image.name}
-									className='w-12 h-12'
-								/>
-							</div>
-						))}
-					</div>
-				</div>
-			</Section>
-
-		</div>
-	);
+  const [selected, setSelected] = React.useState({
+    image: CLICK_BUTTONS[0].image,
+    text: CLICK_BUTTONS[0].text,
+  });
+  return (
+    <div>
+      <div className="grid lg:grid-cols-2">
+        <div className="">
+          <div className="py-10 px-10">
+            {CLICK_BUTTONS.map((item, i) => (
+              <ClickBtn
+                key={i}
+                button={item.button}
+                image={item.image}
+                text={item.text}
+                setSelected={setSelected}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="hidden lg:block pr-[40px]">
+          <div className="">
+            <div className="mt-4 w-full h-96">
+              <img src={selected.image} alt="Image" className="mx-auto" />
+              <p className=" text-white mt-[10px]">{selected.text}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#0e121a] pb-11 w-[95%] rounded-[20px] mx-auto">
+        <h3 className="text-white font-bold text-[30px] py-5 pl-[30px]">
+          Key benefits
+        </h3>
+        <div className="flex px-[30px] flex-col lg:flex-row flex-wrap w-[100%] justify-around">
+          <Benefits
+            image="image/workoffline.svg"
+            title="Working Offline"
+            description="With the ‘’Offline Transactions’’ feature no transactions are ever lost. Even if your network goes down during peak hours, you will still be able to accept 100% of your transactions (coming soon)."
+          />
+          <Benefits
+            image="image/tips.svg"
+            title="Tips"
+            description="Go contactless without saying goodbye to tips! The viva.com | Terminal gives your customers the chance to tip, regardless of how they choose to pay."
+          />
+          <Benefits
+            image="image/batches.svg"
+            title="Batches"
+            description="Easily track shifts using the Batches feature. Use it to segment transactions and generate reports that give you a comprehensive view of your business's performance."
+          />
+          <Benefits
+            image="image/devices.svg"
+            title="Multiple Devices"
+            description="The viva.com | Terminal is available for download on any employee's phone, at absolutely no additional cost, helping you increase productivity and boost sales!"
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Business;
