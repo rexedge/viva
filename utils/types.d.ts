@@ -20,4 +20,11 @@ interface ButtonP {
 	className?: string;
 }
 
+interface ClickBtnP {
+	id?: number;
+	button: string;
+	image: string;
+	text: string;
+	setSelected: React.Dispatch<React.SetStateAction>
+}
 
