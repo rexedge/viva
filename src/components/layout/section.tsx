@@ -9,7 +9,9 @@ export default function Section({
 }: SectionP) {
 	return (
 		<div className={`${color}`}>
-			<div className={`${width} mx-auto ${height} ${className}`}>
+			<div
+				className={`${width}  mx-auto ${height} ${className}`}
+			>
 				{children}
 			</div>
 		</div>

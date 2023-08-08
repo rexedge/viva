@@ -10,6 +10,7 @@ interface SectionP {
 	height?: string;
 	width?: string;
 	className?: string;
+	
 }
 
 interface ButtonP {
@@ -19,3 +20,12 @@ interface ButtonP {
 	href: string;
 	className?: string;
 }
+
+interface ClickBtnP {
+	id?: number;
+	button: string;
+	image: string;
+	text: string;
+	setSelected: React.Dispatch<React.SetStateAction>
+}
+

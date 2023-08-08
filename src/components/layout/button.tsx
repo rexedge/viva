@@ -7,8 +7,10 @@ const Button = ({
 	type = 'primary',
 	href,
 	className,
-}: ButtonP) => {
-	if (type === 'primary') {
+	
+}: ButtonP) => { 
+	
+	if (type === 'primary' ) {
 		return (
 			<Link
 				href={href}

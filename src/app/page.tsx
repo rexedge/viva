@@ -1,7 +1,14 @@
-import React from 'react';
+import Firstsubhead from "@/components/home/firstsubhead";
+import Secondsubhead from "@/components/home/secondsubhead";
+import React from "react";
 
 const Home = () => {
-	return <div>Home</div>;
+	return (
+		<>
+			<Firstsubhead />
+			<Secondsubhead />
+		</>
+	);
 };
 
 export default Home;
