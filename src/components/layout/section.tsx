@@ -6,8 +6,6 @@ export default function Section({
 	height,
 	width = 'max-w-[1440px]',
 	className,
-	
-	
 }: SectionP) {
 	return (
 		<div className={`${color}`}>

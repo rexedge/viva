@@ -4,8 +4,9 @@ import Navbar from './navbar';
 import Button from './button';
 import { usePathname } from 'next/navigation';
 import { headerSGV1 } from '../../../utils/const';
-import Index from '../home';
 
+
+ 
 const Header = () => {
 	const pathname = usePathname();
 	const h1 = `${
@@ -84,7 +85,7 @@ const Header = () => {
 					></video>
 				</div>
 			</div>
-			<Index/>
+			
 		</div>
 	);
 };

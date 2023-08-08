@@ -1,21 +1,21 @@
-import React from 'react'
-import Section from '../layout/section'
+import React from "react";
+import Section from "../layout/section";
 
-const Index = () => {
-  return (
-		<Section className='absolute mt-10 items-center  flex gap-2 md:flex-cols-2 min-h-[380px] md:px-0 bg-[#06070b] mx-auto  max-w-[1440px]'>
-			<div className='h-max py-8 text-white text-3xl font-bold md:px-4 lg:text-5xl mx-8'>
+const Firstsubhead = () => {
+	return (
+		<Section className='items-center grid grid-cols-1 md:grid-cols-2 min-h-[380px] md:px-0  bg-primary mx-auto max-w-[1440px]'>
+			<div className='h-max py-8 text-white text-3xl md:text-4xl font-bold md:px-6 lg:text-5xl ml-8'>
 				<h2>
 					Whether you're a business owner or an individual, our
 					Tap to Pay app makes payments easy and accessible for
 					all.
 				</h2>
-				<p className='  font-medium text-sm pt-6'>
+				<p className='font-medium text-sm pt-6'>
 					Available where applicable.
 				</p>
 			</div>
-			<div className='flex rounded-3xl border border-slate-200 mx-10 my-16 p-[4px]'>
-				<div className='flex flex-wrap place-content-center gap-3 rounded-inherit bg-[#06070b]  p-4 sm:px-20 sm:py-8 md:p-4 lg:px-20 lg:py-8'>
+			<div className='md:flex rounded-3xl border border-slate-200 mx-8 my-16 p-[4px]'>
+				<div className='flex flex-wrap place-content-center gap-3 rounded-inherit bg-primary  px-12 py-8 md:p-4 lg:px-10 lg:py-12'>
 					<ul className='grid h-12 w-20 place-content-center rounded-full bg-[#17233E] p-2'>
 						<li>
 							<img
@@ -224,13 +224,8 @@ const Index = () => {
 					</ul>
 				</div>
 			</div>
-
-			<div>
-				
-			</div>
 		</Section>
-  );
-		
-}
+	);
+};
 
-export default Index
+export default Firstsubhead;
