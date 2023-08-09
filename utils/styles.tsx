@@ -1,6 +1,6 @@
 export const Styles = {
 	boxWidth: " max-w-[1440px]",
-	flexStart: "flex justify-center item-start",
+	flexStart: "flex justify-center ",
 	flexCenter: "flex justify-center item-center",
 	paddingX: "sm:px-16 px-6",
 	paddingY: "sm:py-16 py-6",

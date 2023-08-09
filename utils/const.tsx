@@ -237,65 +237,58 @@ export const headerSGV1 = [
 
 export const footerLinks = [
 	{
-		title: "Useful Links",
+		title: "Pricing",
 		links: [
 			{
-				name: "Content",
-				link: "https://www.hoobank.com/content/",
-			},
-			{
-				name: "How it Works",
-				link: "https://www.hoobank.com/how-it-works/",
-			},
-			{
-				name: "Create",
-				link: "https://www.hoobank.com/create/",
-			},
-			{
-				name: "Explore",
-				link: "https://www.hoobank.com/explore/",
-			},
-			{
-				name: "Terms & Services",
-				link: "https://www.hoobank.com/terms-and-services/",
+				link: "https://www.isce.app/",
 			},
 		],
 	},
 	{
-		title: "Community",
+		title: "Terms & Conditions",
 		links: [
 			{
-				name: "Help Center",
-				link: "https://www.hoobank.com/help-center/",
-			},
-			{
-				name: "Partners",
-				link: "https://www.hoobank.com/partners/",
-			},
-			{
-				name: "Suggestions",
-				link: "https://www.hoobank.com/suggestions/",
-			},
-			{
-				name: "Blog",
-				link: "https://www.hoobank.com/blog/",
-			},
-			{
-				name: "Newsletters",
-				link: "https://www.hoobank.com/newsletters/",
+				link: "https://www.isce.app/",
 			},
 		],
 	},
 	{
-		title: "Partner",
+		title: "Privacy Policy",
 		links: [
 			{
-				name: "Our Partner",
-				link: "https://www.hoobank.com/our-partner/",
+				link: "https://www.isce.app/",
 			},
+		],
+	},
+	{
+		title: "Cookies Policy",
+		links: [
 			{
-				name: "Become a Partner",
-				link: "https://www.hoobank.com/become-a-partner/",
+				link: "https://www.isce.app/",
+			},
+		],
+	},
+	{
+		title: "Submit a Complaint",
+		links: [
+			{
+				link: "https://www.isce.app/",
+			},
+		],
+	},
+	{
+		title: "ISCE Compliance",
+		links: [
+			{
+				link: "https://www.isce.app/",
+			},
+		],
+	},
+	{
+		title: "Statements",
+		links: [
+			{
+				link: "https://www.isce.app/",
 			},
 		],
 	},

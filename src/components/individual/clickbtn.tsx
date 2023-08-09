@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { ClickBtnP } from "../../../utils/types";
 
 const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 	const [showImage, setShowImage] = useState(false);
@@ -16,7 +17,7 @@ const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 		<div className='flex flex-col mx-auto mb-5 lg:mb-0'>
 			<button
 				onClick={handleButtonClick}
-				className=' flex justify-between items-center px-4 bg-[#0E121A] h-20 text-white rounded-2xl outline outline-1 outline-gray-600'
+				className=' flex justify-between items-center px-4  bg-primary h-20 text-white rounded-2xl outline outline-1 outline-gray-600'
 			>
 				{button}
 				<svg

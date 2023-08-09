@@ -1,3 +1,5 @@
+import { type } from "os";
+
 interface CardP {
 	image: string;
 	num: number;
@@ -28,4 +30,10 @@ interface ClickBtnP {
 	text: string;
 	setSelected: React.Dispatch<React.SetStateAction>
 }
-
+interface ButtonH{
+	text: string;
+	type?:'tertiary' | 'pro';
+	active?: boolean;
+	href:string;
+	className?: string;
+}

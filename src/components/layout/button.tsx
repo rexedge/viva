@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { ButtonP } from '../../../utils/types';
 
 const Button = ({
 	text,
@@ -33,5 +34,6 @@ const Button = ({
 		);
 	}
 };
+
 
 export default Button;
