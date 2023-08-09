@@ -14,7 +14,7 @@ const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 	};
 
 	return (
-		<div className='flex flex-col mx-auto mb-5 lg:mb-0'>
+		<div className='flex flex-col mx-auto mb-5 lg:mb-0 mt-[10px]'>
 			<button
 				onClick={handleButtonClick}
 				className=' flex justify-between items-center px-4  bg-primary h-20 text-white rounded-2xl outline outline-1 outline-gray-600'
