@@ -7,12 +7,12 @@ import Link from 'next/link';
 const Footer = () => {
   return (
 		<Section
-			className={`${Styles.flexCenter} pt-10 pb-10 flex-col font-bold font-4xl bg-primary text-dimWhite`}
+			className={`${Styles.flexCenter}  pt-10 pb-20 flex-col font-bold font-4xl bg-primary text-dimWhite`}
 		>
 			<div className={`flex md:flex-row flex-row`}>
 				<div className='mx-10 '>
 					<h3>Ⓒ2023 ISCE Wallet</h3>
-					<p className={`${Styles.paragraph} mt-4`}>
+					<p className={`${Styles.paragraph} font-normal mt-4`}>
 						All rights reserved
 					</p>
 				</div>
@@ -39,25 +39,39 @@ const Footer = () => {
 					</div>
 				))}
 			</div>
-			<div className=' pt-8 mx-10 flex flex-row'>
-				<div className='font-semibold pr-8'>
-					<h3>Principal member</h3>
-					<img src='/image/logowhite.svg' alt='' />
-				</div>
-				<div className='font-semibold'>
-					<h3>Cloud services by</h3>
-					<img src='/image/logowhite.svg' alt='' />
-				</div>
-				<div className='font-semibold pl-20 flex-wrap'>
-					<h3>
+			<div className='mx-10  pt-8 col-span-full flex flex-wrap gap-6'>
+				<ul className='font-semibold flex gap-6'>
+					<li>
+						<span>Principal member</span>
+						<img
+							src='/image/logowhite.svg'
+							alt=''
+							className='pt-2'
+							width={"50px"}
+						/>
+					</li>
+					<li>
+						<span>Cloud services by</span>
+						<img
+							src='/image/logowhite.svg'
+							alt=''
+							className='pt-2'
+							width={"50px"}
+						/>
+					</li>
+				</ul>
+				<div className='min-w-[350px] font-semibold  max-w-none flex-1'>
+					<p>
 						ISCE Payment Services Single Member S.A[ISCE
 						Payments], Hellenic Business Registry
 						no.1816262119, is an electronic-money institution
 						licensed by the Bank of Uk for the provision of
 						payment services within the EEA and the US.
-					</h3>
+					</p>
 				</div>
 			</div>
+
+			
 		</Section>
   );
 }

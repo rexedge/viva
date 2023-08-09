@@ -12,6 +12,8 @@ module.exports = {
 			colors: {
 				primary: "#06070b",
 				dimWhite: "rgba(255, 255, 255, 0.7)",
+				secondary: "rgb(29,35,46)",
+				tertairy : "rgb(56,61,71)"
 			},
 		},
 	},

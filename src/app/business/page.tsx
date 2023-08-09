@@ -11,7 +11,7 @@ const Business = () => {
     text: CLICK_BUTTONS[0].text,
   });
   return (
-    <div>
+    <div className="bg-primary">
       <div className="grid lg:grid-cols-2">
         <div className="">
           <div className="py-10 px-10">
@@ -35,7 +35,7 @@ const Business = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#0e121a] pb-11 w-[95%] rounded-[20px] mx-auto">
+      <div className="bg-secondary pb-11 w-[95%] rounded-[20px] mx-auto">
         <h3 className="text-white font-bold text-[30px] py-5 pl-[30px]">
           Key benefits
         </h3>

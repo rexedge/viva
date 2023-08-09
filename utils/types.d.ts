@@ -37,3 +37,9 @@ interface ButtonH{
 	href:string;
 	className?: string;
 }
+interface FooterLink{
+	text: string,
+	type?:''
+	href:string,
+	
+}
