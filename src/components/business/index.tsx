@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { ClickBtnP } from "../../../utils/types";
 
 const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 	const [showImage, setShowImage] = useState(false);

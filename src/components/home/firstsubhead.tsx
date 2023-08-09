@@ -5,7 +5,9 @@ import Image from "next/image";
 
 const Firstsubhead = () => {
 	return (
-		<Section className='items-center grid grid-cols-1 md:grid-cols-2 min-h-[380px] md:px-0  bg-primary mx-auto'>
+		<Section
+			className={`items-center grid grid-cols-1 md:grid-cols-2 min-h-[380px] md:px-0  bg-primary mx-auto ` }
+		>
 			<div className='h-max py-8 text-white text-3xl md:text-4xl font-bold md:px-6 lg:text-5xl ml-8'>
 				<h2>
 					Whether you're a business owner or an individual, our
