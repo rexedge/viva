@@ -3,6 +3,7 @@ import React from "react";
 import { CLICK_BUTTONS } from "../../../utils/dc";
 import ClickBtn from "@/components/individual/clickbtn";
 import Benefits from "@/components/business/benefits";
+import Payment from "@/components/business/payment";
 
 const Business = () => {
   const [selected, setSelected] = React.useState({
@@ -60,6 +61,15 @@ const Business = () => {
             description="The viva.com | Terminal is available for download on any employee's phone, at absolutely no additional cost, helping you increase productivity and boost sales!"
           />
         </div>
+      </div>
+      <div className="text-white text-center w-ful bg-primary">
+        <h5 className="lg:text-[45px] text-[30px] pt-[50px] font-bold px-[28px] md:text-[40px]">
+          Accepting all payment methods across Europe*
+        </h5>
+        <div className="lg:px-[18rem]">
+          <Payment />
+        </div>
+        <p className="italic">*Available where applicable.</p>
       </div>
     </div>
   );
