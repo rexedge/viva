@@ -1,18 +1,18 @@
-import React from "react";
-import Section from "../layout/section";
-import { REMOTE_IMAGES } from "../../../utils/images-remote";
-import Image from "next/image";
+import React from 'react';
+import Section from '../layout/section';
+import { REMOTE_IMAGES } from '../../../utils/images-remote';
+import Image from 'next/image';
 
 const Firstsubhead = () => {
 	return (
 		<Section
-			className={`items-center grid grid-cols-1 md:grid-cols-2 min-h-[380px] md:px-0  bg-primary mx-auto ` }
+			className={`items-center grid grid-cols-1 md:grid-cols-2 min-h-[380px] md:px-0  bg-primary mx-auto `}
 		>
 			<div className='h-max py-8 text-white text-3xl md:text-4xl font-bold md:px-6 lg:text-5xl ml-8'>
 				<h2>
-					Whether you're a business owner or an individual, our
+					{`Whether you're a business owner or an individual, our
 					Tap to Pay app makes payments easy and accessible for
-					all.
+					all.`}
 				</h2>
 				<p className='font-medium text-sm pt-6'>
 					Available where applicable.
