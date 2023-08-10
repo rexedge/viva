@@ -31,7 +31,7 @@ const Header = () => {
 			: ''
 	}`;
 	return (
-		<div className='min-h-[550px] max-w-[1440px] mx-auto relative'>
+		<div className='min-h-[550px] max-w-[1440px] pb-10 mx-auto relative'>
 			<video
 				src='/video/bgviva.mp4'
 				autoPlay
@@ -41,7 +41,7 @@ const Header = () => {
 			<Navbar />
 			<div className='grid lg:grid-cols-2 px-16 items-center'>
 				<div className='text-white flex flex-col h-full'>
-					<h1 className='max-w-[1440px] mt-5 font-bold mb-5 text-xl'>
+					<h1 className=' sm:text-lg  mt-5 font-bold mb-5 text-xl'>
 						{h1}
 					</h1>
 					<h2 className='font-semibold text-7xl mb-4 w-[500px]'>
@@ -81,7 +81,7 @@ const Header = () => {
 						src='/video/bgviva.mp4'
 						autoPlay
 						loop
-						className='w-full h-full object-cover lg:hidden'
+						className='w-full h-["100%"] object-cover lg:hidden'
 					></video>
 				</div>
 			</div>

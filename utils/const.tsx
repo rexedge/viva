@@ -238,59 +238,31 @@ export const headerSGV1 = [
 export const footerLinks = [
 	{
 		title: "Pricing",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 	{
 		title: "Terms & Conditions",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 	{
 		title: "Privacy Policy",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 	{
 		title: "Cookies Policy",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 	{
 		title: "Submit a Complaint",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 	{
 		title: "ISCE Compliance",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 	{
 		title: "Statements",
-		links: [
-			{
-				link: "https://www.isce.app/",
-			},
-		],
+		link: "https://www.isce.app/",
 	},
 ];
 

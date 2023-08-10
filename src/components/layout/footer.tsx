@@ -1,11 +1,11 @@
-import React from 'react'
-import Section from './section'
-import { Styles } from '../../../utils/styles';
-import { SocialMedia, footerLinks } from '../../../utils/const';
-import Link from 'next/link';
+import React from "react";
+import Section from "./section";
+import { Styles } from "../../../utils/styles";
+import { SocialMedia, footerLinks } from "../../../utils/const";
+import Link from "next/link";
 
 const Footer = () => {
-  return (
+	return (
 		<Section
 			className={`${Styles.flexCenter}  pt-10 pb-20 flex-col font-bold font-4xl bg-primary text-dimWhite`}
 		>
@@ -22,21 +22,22 @@ const Footer = () => {
 						<Link
 							key={SocialMedia.name}
 							href={SocialMedia.link}
-							className='cursor-pointer  place-content-center rounded-full p-2 inline-flex  bg-gray-700 mx-1.5 overflow-hidden '
+							className='cursor-pointer  place-content-center rounded-full p-2 inline-flex hover:bg-dimWhite translate-x-4 scale-105  duration-500  bg-gray-700 mx-1.5 overflow-hidden '
 						>
 							{SocialMedia.icon}
 						</Link>
 					))}
 				</div>
 			</div>
-			<div className='mx-10 mt-4 justify-start'>
+			<div className='mx-10  mt-4 justify-start'>
 				{footerLinks.map((footerLink) => (
-					<div
+					<Link
 						key={footerLink.title}
-						className='pt-2  text-dimWhite font-medium'
+						href={footerLink.link}
+						className='text-dimWhite font-medium'
 					>
 						<h2>{footerLink.title}</h2>
-					</div>
+					</Link>
 				))}
 			</div>
 			<div className='mx-10  pt-8 col-span-full flex flex-wrap gap-6'>
@@ -70,10 +71,8 @@ const Footer = () => {
 					</p>
 				</div>
 			</div>
-
-			
 		</Section>
-  );
-}
+	);
+};
 
-export default Footer
+export default Footer;
