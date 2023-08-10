@@ -1,6 +1,7 @@
-"use client";
-import React, { useState } from "react";
-import { ClickBtnP } from "../../../utils/types";
+'use client';
+import React, { useState } from 'react';
+import { ClickBtnP } from '../../../utils/types';
+import Image from 'next/image';
 
 const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 	const [showImage, setShowImage] = useState(false);
@@ -24,15 +25,15 @@ const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 					xmlns='http://www.w3.org/2000/svg'
 					fill='none'
 					viewBox='0 0 24 24'
-					stroke-width='1.5'
+					strokeWidth='1.5'
 					stroke='currentColor'
 					className={`${
-						showImage && "rotate-180"
+						showImage && 'rotate-180'
 					} lg:rotate-90 w-6 h-6`}
 				>
 					<path
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 						d='M4.5 15.75l7.5-7.5 7.5 7.5'
 					/>
 				</svg>
@@ -40,7 +41,9 @@ const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 			<div className='lg:hidden'>
 				{showImage && (
 					<div className='mt-4 w-full h-96'>
-						<img
+						<Image
+							width={600}
+							height={600}
 							src={image}
 							alt='Image'
 							className='mx-auto'
@@ -50,7 +53,7 @@ const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 				)}
 			</div>
 		</div>
-);
+	);
 };
 
 export default ClickBtn;

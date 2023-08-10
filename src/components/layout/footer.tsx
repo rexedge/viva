@@ -1,8 +1,9 @@
-import React from "react";
-import Section from "./section";
-import { Styles } from "../../../utils/styles";
-import { SocialMedia, footerLinks } from "../../../utils/const";
-import Link from "next/link";
+import React from 'react';
+import Section from './section';
+import { Styles } from '../../../utils/styles';
+import { SocialMedia, footerLinks } from '../../../utils/const';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
 	return (
@@ -18,9 +19,9 @@ const Footer = () => {
 				</div>
 
 				<div className='ml-8 flex-[1.5] gap-6 flex-wrap md:mt-0'>
-					{SocialMedia.map((SocialMedia) => (
+					{SocialMedia.map((SocialMedia, i) => (
 						<Link
-							key={SocialMedia.name}
+							key={i}
 							href={SocialMedia.link}
 							className='cursor-pointer  place-content-center rounded-full p-2 inline-flex hover:bg-dimWhite translate-x-4 scale-105  duration-500  bg-gray-700 mx-1.5 overflow-hidden '
 						>
@@ -30,9 +31,9 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='mx-10  mt-4 justify-start'>
-				{footerLinks.map((footerLink) => (
+				{footerLinks.map((footerLink, i) => (
 					<Link
-						key={footerLink.title}
+						key={i}
 						href={footerLink.link}
 						className='text-dimWhite font-medium'
 					>
@@ -44,20 +45,22 @@ const Footer = () => {
 				<ul className='font-semibold flex gap-6'>
 					<li>
 						<span>Principal member</span>
-						<img
+						<Image
+							width={600}
+							height={600}
 							src='/image/logowhite.svg'
 							alt=''
-							className='pt-2'
-							width={"50px"}
+							className='w-20'
 						/>
 					</li>
 					<li>
 						<span>Cloud services by</span>
-						<img
+						<Image
+							width={600}
+							height={600}
 							src='/image/logowhite.svg'
 							alt=''
-							className='pt-2'
-							width={"50px"}
+							className='w-20'
 						/>
 					</li>
 				</ul>

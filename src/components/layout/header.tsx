@@ -5,8 +5,6 @@ import Button from './button';
 import { usePathname } from 'next/navigation';
 import { headerSGV1 } from '../../../utils/const';
 
-
- 
 const Header = () => {
 	const pathname = usePathname();
 	const h1 = `${
@@ -49,22 +47,14 @@ const Header = () => {
 					</h2>
 					<p className='text-base mb-8'>{p}</p>
 					<div className='flex  gap-4 mb-10'>
-						{headerSGV1.map((svg, index) => {
+						{headerSGV1.map((svg, i) => {
 							return (
-								<>
-									<div
-										key={index}
-										className='flex h-10 gap-6 place-content-center rounded-md border-2 border-white/50 bg-black py-1 px-2'
-									>
-										{svg.svgPath}
-									</div>
-									<div
-										key={index}
-										className='flex h-10 gap-6 place-content-center rounded-md border-2 border-white/50 bg-black py-1 px-2'
-									>
-										{svg.svgPath2}
-									</div>
-								</>
+								<div
+									key={i}
+									className='flex h-10 gap-6 place-content-center rounded-md border-2 border-white/50 bg-black py-1 px-2'
+								>
+									{svg.svgPath}
+								</div>
 							);
 						})}
 					</div>
@@ -85,7 +75,6 @@ const Header = () => {
 					></video>
 				</div>
 			</div>
-			
 		</div>
 	);
 };
