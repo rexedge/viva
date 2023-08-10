@@ -8,6 +8,7 @@ import Image from 'next/image';
 const Footer = () => {
 	return (
 		<Section
+			color='bg-primary'
 			className={`${Styles.flexCenter}  pt-10 pb-20 flex-col font-bold font-4xl bg-primary text-dimWhite`}
 		>
 			<div className={`flex md:flex-row flex-row`}>
