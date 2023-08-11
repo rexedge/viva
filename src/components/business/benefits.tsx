@@ -3,15 +3,15 @@ import React from 'react';
 
 export default function Benefits({ image, title, description }: CardBenefitsP) {
 	return (
-		<div className='w-[100%] lg:w-[48%] text-center p-[30px] h-[500px] lg:h-[440px]  bg-tertairy mt-[20px] rounded-[20px] text-white'>
+		<div className='text-center flex flex-col p-8 h-[500px] lg:h-[440px] bg-tertairy rounded-3xl text-white'>
 			<Image
 				width={600}
 				height={600}
-				className='mx-auto'
+				className='w-full h-64 object-contain object-center'
 				src={image}
 				alt={title}
 			/>
-			<h2 className='text-[25px] font-bold pb-[20px]'>{title}</h2>
+			<h2 className='text-[25px] font-bold'>{title}</h2>
 			<p>{description}</p>
 		</div>
 	);

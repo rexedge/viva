@@ -1,4 +1,4 @@
-import { type } from "os";
+import { type } from 'os';
 
 interface CardP {
 	image: string;
@@ -12,7 +12,6 @@ interface SectionP {
 	height?: string;
 	width?: string;
 	className?: string;
-	
 }
 
 interface ButtonP {
@@ -28,18 +27,18 @@ interface ClickBtnP {
 	button: string;
 	image: string;
 	text: string;
-	setSelected: React.Dispatch<React.SetStateAction>
+	selected: boolean;
+	setSelected: React.Dispatch<React.SetStateAction>;
 }
-interface ButtonH{
+interface ButtonH {
 	text: string;
-	type?:'tertiary' | 'pro';
+	type?: 'tertiary' | 'pro';
 	active?: boolean;
-	href:string;
+	href: string;
 	className?: string;
 }
-interface FooterLink{
-	text: string,
-	type?:''
-	href:string,
-	
+interface FooterLink {
+	text: string;
+	type?: '';
+	href: string;
 }

@@ -5,6 +5,7 @@ import Cards from '@/components/individual/cards';
 import React from 'react';
 import { CLICK_BUTTONS } from '../../../utils/ec';
 import Image from 'next/image';
+import Section from '@/components/layout/section';
 
 const Individual = () => {
 	const [selected, setSelected] = React.useState({
@@ -13,9 +14,12 @@ const Individual = () => {
 	});
 
 	return (
-		<div className=' w-full bg-[#0E121A]'>
-			<div className='grid lg:grid-cols-2'>
-				<div className=''>
+		<Section
+			color='bg-primary'
+			className=' w-full'
+		>
+			<div className='flex'>
+				<div className='w-full lg:w-1/2 '>
 					<div className='py-10 px-10'>
 						{CLICK_BUTTONS.map((item, i) => (
 							<ClickBtn
@@ -23,25 +27,24 @@ const Individual = () => {
 								button={item.button}
 								image={item.image}
 								text={item.text}
+								selected={item.image === selected.image}
 								setSelected={setSelected}
 							/>
 						))}
 					</div>
 				</div>
-				<div className='hidden lg:block'>
-					<div className=''>
-						<div className='mt-4 w-full h-96'>
-							<Image
-								width={600}
-								height={600}
-								src={selected.image}
-								alt='Image'
-								className='mx-auto'
-							/>
-							<p className=' text-white'>
-								{selected.text}
-							</p>
-						</div>
+				<div className='hidden lg:flex w-1/2 justify-center items-center'>
+					<div className='mt-4 w-full flex flex-col gap-4'>
+						<Image
+							width={600}
+							height={600}
+							src={selected.image}
+							alt='Image'
+							className='mx-auto'
+						/>
+						<p className=' text-white text-center'>
+							{selected.text}
+						</p>
 					</div>
 				</div>
 			</div>
@@ -70,7 +73,7 @@ const Individual = () => {
 					text='Receive the money into your bank account.'
 				/>
 			</div>
-		</div>
+		</Section>
 	);
 };
 

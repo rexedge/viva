@@ -3,7 +3,13 @@ import React, { useState } from 'react';
 import { ClickBtnP } from '../../../utils/types';
 import Image from 'next/image';
 
-const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
+const ClickBtn = ({
+	button,
+	image,
+	text,
+	setSelected,
+	selected,
+}: ClickBtnP) => {
 	const [showImage, setShowImage] = useState(false);
 
 	const handleButtonClick = () => {
@@ -18,7 +24,9 @@ const ClickBtn = ({ button, image, text, setSelected }: ClickBtnP) => {
 		<div className='flex flex-col mx-auto mb-5 lg:mb-0 mt-[10px]'>
 			<button
 				onClick={handleButtonClick}
-				className=' flex justify-between items-center px-4 focus:bg-dimWhite  bg-primary h-20 text-white rounded-2xl outline outline-1 outline-gray-600'
+				className={`flex justify-between items-center px-4 ${
+					selected ? 'bg-dimWhite' : ''
+				}  bg-primary h-20 text-white rounded-2xl outline outline-1 outline-gray-600`}
 			>
 				{button}
 				<svg

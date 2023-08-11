@@ -5,6 +5,7 @@ import ClickBtn from '@/components/individual/clickbtn';
 import Benefits from '@/components/business/benefits';
 import Payment from '@/components/business/payment';
 import Image from 'next/image';
+import Section from '@/components/layout/section';
 
 const Business = () => {
 	const [selected, setSelected] = React.useState({
@@ -12,7 +13,7 @@ const Business = () => {
 		text: CLICK_BUTTONS[0].text,
 	});
 	return (
-		<div className='bg-primary'>
+		<Section color='bg-primary'>
 			<div className='grid lg:grid-cols-2'>
 				<div className=''>
 					<div className='py-10 px-10'>
@@ -22,6 +23,7 @@ const Business = () => {
 								button={item.button}
 								image={item.image}
 								text={item.text}
+								selected={item.text === selected.text}
 								setSelected={setSelected}
 							/>
 						))}
@@ -44,11 +46,11 @@ const Business = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bg-secondary pb-11 w-[95%] rounded-[20px] mx-auto'>
-				<h3 className='text-white font-bold text-[30px] py-5 pl-[30px]'>
+			<div className='bg-secondary rounded-3xl flex flex-col p-6 gap-6'>
+				<h3 className='text-white font-bold text-[30px]'>
 					Key benefits
 				</h3>
-				<div className='flex px-[30px] flex-col lg:flex-row flex-wrap w-[100%] justify-around'>
+				<div className='grid gap-6 grid-cols-2 justify-around'>
 					<Benefits
 						image='image/workoffline.svg'
 						title='Working Offline'
@@ -80,7 +82,7 @@ const Business = () => {
 				</div>
 				<p className='italic'>*Available where applicable.</p>
 			</div>
-		</div>
+		</Section>
 	);
 };
 
